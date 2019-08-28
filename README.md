@@ -1,4 +1,4 @@
-# predictor
+# Predictor
 
 The purpose of this model is to make Return on Investment (ROI) predictions for a beauty retailer's customer sampling program of different beauty brands using random forest modeling and multilinear regression techniques with Python’s SciPy, Pandas, and Scikit-learn libraries. The goal is to predict future ROIs for a brand's samples based off of previous data of that brand's sampling success, then predict future ROIs for brands that do NOT have any previous sampling data (explained in a little bit). 
 
@@ -6,9 +6,8 @@ To predict the future ROI success of a brand's samples, we first train a model o
 
 These predictions are outputted to a predictions folder, and the model code also has the capability to display a visualization of the results as well as the raw data.
 
-How the ROI Model Works:
+### How the ROI Model Works:
 Code: Predictive_Model/prediction_BROI_2.0.py
-
 1) Import data from /input_data
 	- Brands with previous ROI data: data_ROI_brand_generic.json
 	- List of all brands, including brands with NO ROI data: no_ROI_brand_generic.json
@@ -31,7 +30,7 @@ IN main() FUNCTION
 9) Output said dataframe to /predictions:
 	-  predicted_brandROI_v*.json (currently v2)
 
-ADDITIONAL FUNCTIONALITIES:
+### ADDITIONAL FUNCTIONALITIES:
 1) Optimize parameters for randomForest model
 	- Uncomment randomForest_optimizer
 	- Prints out estimation of better parameters for model
